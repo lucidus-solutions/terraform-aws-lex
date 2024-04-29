@@ -19,3 +19,34 @@ variable "program" {
   description = "The name of the program that the application or project belongs to"
   sensitive   = false
 }
+
+variable "child_directed" {
+  type = bool
+}
+
+variable "description" {
+  type = string
+}
+
+variable "idle_session_ttl_in_seconds" {
+  type = number
+}
+
+variable "n_lu_intent_confidence_threshold" {
+  type    = number
+  default = 0.7
+}
+
+variable "role_arn" {
+  type = string
+}
+
+variable "source_bot_version" {
+  type = number
+
+
+}
+
+variable "type" {
+  type = string
+}
